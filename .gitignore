@@ -1,0 +1,41 @@
+# Build and dependency directories
+/build/
+/out/
+/.gradle/
+
+# Gradle Wrapper files (except for scripts)
+!gradlew
+!gradlew.bat
+!/gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA files
+/.idea/
+/*.iml
+
+# Eclipse files
+/.project
+/.classpath
+/.settings/
+/*.launch
+
+# VSCode files
+/.vscode/
+
+# Logs and runtime files
+*.log
+*.pid
+*.hprof
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Package files
+*.jar
+*.war
+*.ear
