@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.sonarqube' version '7.0.1.4817'
 }
 
 group = 'com.example'
@@ -20,4 +21,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "todo-list-app"
+        property "sonar.host.url", "http://192.168.56.11:9000"
+        property "sonar.login", "sonarqube-creds"
+    }
 }
