@@ -24,7 +24,7 @@ pipeline {
         stage('SonarQube Scan') {
             steps {
                 echo 'Running SonarQube analysis...'
-                withSonarQubeEnv('SonarQube') {  
+                withSonarQubeEnv('sonarqube') {  
                     sh './gradlew sonarqube -Dsonar.host.url=$SONARQUBE_URL -Dsonar.login=$SONARQUBE_CREDENTIALS'
                 }
             }
